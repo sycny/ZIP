@@ -23,7 +23,7 @@ exp/
 ```
 You can change this model to other diffusion models, like [google/ddpm-cifar10-32](https://huggingface.co/google/ddpm-cifar10-32).
 ## A Quick Demo
-### Prepared the attacked models and pre-purified images
+### Prepare the attacked models and pre-purified images
 We provide the attacked ResNet-34 model and the purified test datasets (on Imagenette). You can use the following command to view ZIP defense performance.
 
 Step 1. You need to download the [purified image]() first and create the following path:'./pur/Mode3/Imagenette2/'. Please put the purified images into this path like this:
