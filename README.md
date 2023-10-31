@@ -14,7 +14,7 @@ Except for the CIFAR10, the other datasets require you to download manually and 
 3. [Imagenette](https://s3.amazonaws.com/fast-ai-imageclas/imagenette2.tgz) 
 
 ### Diffusion Model
-We use a pre-trained diffusion model provided by OpenAI [Download](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/256x256_diffusion_uncond.pt)/[ref](https://github.com/openai/guided-diffusion). Please download it and put it into the './exp/logs/imagenet/'
+We use a pre-trained diffusion model provided by OpenAI [Download](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/256x256_diffusion_uncond.pt)/[Ref](https://github.com/openai/guided-diffusion). Please download it and put it into the './exp/logs/imagenet/'
 ```
 exp/
 |__ logs/
@@ -26,7 +26,7 @@ You can change this model to other diffusion models, like [google/ddpm-cifar10-3
 ### Prepare the attacked models and pre-purified images
 We provide the attacked ResNet-34 model and the purified test datasets (on Imagenette). You can use the following command to view ZIP defense performance.
 
-Step 1. You need to download the [purified image]() first and create the following path:'./pur/Mode3/Imagenette2/'. Please put the purified images into this path like this:
+Step 1. You need to download the [purified image](https://outlookuga-my.sharepoint.com/:u:/g/personal/ys07245_uga_edu/EXJdoUxODb5Grwacqwg7R00BvpL5eIITN2jXdN4cNDEURg?e=kxPmVO) first and create the following path:'./pur/Mode3/Imagenette2/'. Please put the purified images into this path like this:
 ```
 pur/
 |__ Mode3/
@@ -65,7 +65,7 @@ pur/
                     |_val_pois
                     |_...        
 ```
-Step 2. You need to download the attacked classification model from [google drive](). And create path:'./Imagenette2_pretrain/'. Then, put the model weight in this fold as follows:
+Step 2. You need to download the [attacked classification models](https://outlookuga-my.sharepoint.com/:u:/g/personal/ys07245_uga_edu/EWw4GerXAdpAsIC57pwz2sgB1j5agaA0JhYZl2ArQ-NOnA?e=TkkYH6). And create path:'./Imagenette2_pretrain/'. Then, put the model weight in this fold as follows:
 ```
 Imagenette2_pretrain/
     |__BadNet/
